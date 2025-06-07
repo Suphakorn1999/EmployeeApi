@@ -32,24 +32,14 @@ git clone https://github.com/Suphakorn1999/EmployeeApi.git
 cd EmployeeApi
 ```
 
-### 2. ตั้งค่า Connection String
-
-แก้ไขไฟล์ `appsettings.json` ที่ `EmployeeApi.Api/appsettings.json`
-
-```json
-"ConnectionStrings": {
-  "DefaultConnection": "Server=localhost;Database=EmployeeDb;Trusted_Connection=True;"
-}
-```
-
-### 3. สร้างฐานข้อมูล PostgreSQL ด้วย Docker
+### 2. สร้างฐานข้อมูล PostgreSQL ด้วย Docker
 
 ```bash
 cd EmployeeApi
 docker-compose up -d
 ```
 
-### 4. สร้างฐานข้อมูลและ Migration
+### 3. สร้างฐานข้อมูลและ Migration
 
 ```bash
 cd EmployeeApi.Infrastructure
@@ -61,7 +51,7 @@ Apply Migration
 dotnet ef database update --project EmployeeApi.Infrastructure --startup-project ../EmployeeApi.Api
 ```
 
-### 5. รันโปรเจกต์
+### 4. รันโปรเจกต์
 
 ```bash
 cd ../EmployeeApi.Api
