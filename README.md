@@ -42,15 +42,26 @@ cd EmployeeApi
 }
 ```
 
-### 3. สร้างฐานข้อมูลและ Migration
+### 3. สร้างฐานข้อมูล PostgreSQL ด้วย Docker
+
+```bash
+cd EmployeeApi
+docker-compose up -d
+```
+
+### 4. สร้างฐานข้อมูลและ Migration
 
 ```bash
 cd EmployeeApi.Infrastructure
+
+ทำ EF Migration
 dotnet ef migrations add InitialCreate --project EmployeeApi.Infrastructure --startup-project ../EmployeeApi.Api
+
+Apply Migration
 dotnet ef database update --project EmployeeApi.Infrastructure --startup-project ../EmployeeApi.Api
 ```
 
-### 4. รันโปรเจกต์
+### 5. รันโปรเจกต์
 
 ```bash
 cd ../EmployeeApi.Api
