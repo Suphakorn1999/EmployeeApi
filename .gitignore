@@ -1,0 +1,53 @@
+## Build results
+bin/
+obj/
+out/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## VS Code
+.vscode/
+
+## ASP.NET Core Secret Manager
+secrets.json
+
+## IIS Express
+.vs/
+*.vspscc
+
+## Logs
+*.log
+logs/
+
+## Database
+*.mdf
+*.ldf
+*.sqlite
+
+## Test Results
+TestResults/
+*.trx
+
+## Config files
+appsettings.Development.json
+appsettings.*.json.local
+
+## DotNet environment
+.env
+.env.*
+
+## Windows
+Thumbs.db
+ehthumbs.db
+
+## NuGet packages
+*.nupkg
+*.snupkg
+.nuget/
+
+## Docker
+**/docker-compose.override.yml
