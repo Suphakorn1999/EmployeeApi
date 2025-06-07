@@ -51,3 +51,9 @@ ehthumbs.db
 
 ## Docker
 **/docker-compose.override.yml
+
+EmployeeApi.Infrastructure/bin/
+EmployeeApi.Infrastructure/obj/
+
+!EmployeeApi.Infrastructure/Migrations/
+EmployeeApi.Infrastructure/Migrations/*.cs
