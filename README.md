@@ -10,7 +10,7 @@ API สำหรับจัดการข้อมูลพนักงาน 
 - MediatR (CQRS)
 - AutoMapper
 - Swagger (OpenAPI)
-- SQL Server
+- PostgreSQL
 
 ## 🏗️ โครงสร้างโปรเจกต์ (Clean Architecture)
 
